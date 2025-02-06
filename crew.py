@@ -16,6 +16,10 @@ search_tool = SerperDevTool(
 
 print(search_tool.run(search_query="gcp terraform provider"))
 
+for entry in ENV_VARS.get("ollama", []):
+    if "API_BASE" in entry:
+        entry["BASE_URL"] = entry.pop("API_BASE")
+	    
 @CrewBase
 class Iac():
 	"""Iac crew"""
