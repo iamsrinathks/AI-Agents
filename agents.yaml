@@ -1,4 +1,4 @@
-rscript_generator:
+script_generator:
   role: >
     DevOps Engineer
   goal: >
