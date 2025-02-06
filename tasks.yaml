@@ -18,7 +18,7 @@ store_script_task:
   expected_output: >
     "Confirmation that the script was stored successfully."
   agent: script_validator
-  output_file="./main.tf"
+  output_file:"./main.tf"
 
 
  
